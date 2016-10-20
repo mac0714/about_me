@@ -4,20 +4,41 @@ p {
 }
 h1 {
   font-size: 50px;
+  border: solid red;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .country {
   color: red;
   font-size: 20px;
   font-family: Arial;
+  position: absolute;
+
+
 }
 .carrier {
   font-size: 20px;
   font-family: courier;
-  color: darkgray;
+  position: absolute;
+  top: 700px;
+
 }
 
 .station {
   font-size: 20px;
   font-family: courier;
   color: green;
+  position: absolute;
+  top: 500px;
+
+}
+body {
+  background-color: silver;
+}
+img {
+  margin-top: 5%;
+  display: block;
+  float: right;
+
 }

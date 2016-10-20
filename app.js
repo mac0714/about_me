@@ -107,51 +107,72 @@ function question6() {
   }
 }
 
-var characters = 0;
-while(true) {
-  var game = prompt('How many pokemon in US?');
-  if(game === '142') {
-    alert('Wow you\'re good!');
-    break;
-  } else if(characters > 3) {
-    alert('Better luck next time');
-    break;
+// var characters = 0;
+// while(true) {
+//   var game = prompt('How many pokemon in US?');
+//   if(game === '142') {
+//     alert('Wow you\'re good!');
+//     break;
+//   } else if(characters > 3) {
+//     alert('Better luck next time');
+//     break;
+//   }
+//   characters++;
+//   console.log('The answer is 142');
+// }
+//
+// var height = 0;
+// while(true) {
+//   var spaceNeedle = prompt('How tall is Space Needle?');
+//   if(spaceNeedle === '605') {
+//     alert('Congratulation!!!');
+//     break;
+//   } else if(height > 3) {
+//     alert('Is 605 Feet tall');
+//     break;
+//   }
+//   height++;
+// }
+//
+// while(true) {
+//   var duiString = prompt('What is the alcohol level to be consider as DUI?');
+//   var number = parseInt(duiString);
+//   if(number === 0.08) {
+//     alert('How do you know!!!');
+//     break;
+//   } else if(number < 0.1 && number > 0.08) {
+//     alert('Too high');
+//     break;
+//   } else if(number > 0.07) {
+//     alert('Too low');
+//     break;
+//   }
+//   console.log('is 0.08');
+// }
+
+function question7() {
+  var hobbies = ['running', 'biking', 'lego', 'rc racing', 'music'];
+
+  for (var i = 1; i < 7; i++) {
+    var hobbyAnswer = prompt('What are some of my hobbies?');
+    if (hobbies.includes(hobbyAnswer.toLowerCase())) {
+      alert('Congratulations, that\'s correct!');
+      console.log('Congratulations, that\'s correct!');
+      break;
+    } else if (i < 6) {
+      alert('No, try again');
+      console.log('no try again');
+    } else {
+      alert('better luck next time');
+      console.log('better luck next time');
+    }
   }
-  characters++;
-  console.log('The answer is 142');
 }
 
-var height = 0;
-while(true) {
-  var spaceNeedle = prompt('How tall is Space Needle?');
-  if(spaceNeedle === '605') {
-    alert('Congratulation!!!');
-    break;
-  } else if(height > 3) {
-    alert('Is 605 Feet tall');
-    break;
-  }
-  height++;
-}
-  var music = confirm('Do I like to listen to Heavy Metal Music?');
-  if(music === false) {
-    alert('Couldn\'t handle it');
-  } else {
-    alert('Never, Never, Never');
-    console.log(music + ' ,I don\'t like to listen to Heavy Metal Music');
-  }
-while(true) {
-  var duiString = prompt('What is the alcohol level to be consider as DUI?');
-  var number = parseInt(duiString);
-  if(number === 0.08) {
-    alert('How do you know!!!');
-    break;
-  } else if(number < 0.1 && number > 0.08) {
-    alert('Too high');
-    break;
-  } else if(number > 0.07) {
-    alert('Too low');
-    break;
-  }
-  console.log('is 0.08');
-}
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();

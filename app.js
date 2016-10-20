@@ -176,3 +176,11 @@ question4();
 question5();
 question6();
 question7();
+var question = 0;
+if (correct === 7) {
+  alert('You got all the question right');
+  console.log('You got all the question right');
+} else if (correct < 6) {
+  alert('You only get ' + correct);
+  console.log('You only get ' + correct);
+}

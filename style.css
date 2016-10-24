@@ -1,44 +1,52 @@
 p {
   font-size: 20px;
-  color: blue;
+  text-align: left;
+  text-indent: 50px;
+
 }
 h1 {
   font-size: 50px;
-  border: solid red;
   text-align: center;
   margin-left: 30%;
   margin-right: 30%;
 }
-.country {
-  color: red;
-  font-size: 20px;
-  font-family: Arial;
-  position: absolute;
 
-
-}
-.carrier {
-  font-size: 20px;
-  font-family: courier;
-  position: absolute;
-  top: 700px;
-
-}
-
-.station {
-  font-size: 20px;
-  font-family: courier;
-  color: green;
-  position: absolute;
-  top: 500px;
-
-}
 body {
-  background-color: silver;
+
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightblue;
+
 }
 img {
-  margin-top: 5%;
+  margin: auto;
+  margin-top: 3%;
   display: block;
-  float: right;
 
+}
+.place {
+  font-size: 15px;
+  font-family: Arial;
+  border: 5px solid yellow;
+  width: 200px;
+
+}
+
+table {
+  width: 100%;
+}
+
+.column1, .column2, .column3, .column4 {
+  float: left;
+  width: 23%;
+  border: 2px solid yellow;
+  margin: .7%;
+  border-radius: 10%
+}
+.column1 li, .column2 li, .column3 li, .column4 li {
+  color: blue;
+}
+.column1 p, .column2 p, .column3 p, .column4 p {
+  color: #0B2E22;
 }
